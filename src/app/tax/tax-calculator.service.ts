@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 export class TaxCalculatorService {
   constructor() { }
    calculateTotal(value: number, vat: number): number  {
-    return value + value * (vat / 100);
+    return Number(value) + Number(value) * (vat / 100);
   }
 
   calculateTax(value: number, vat: number): number {

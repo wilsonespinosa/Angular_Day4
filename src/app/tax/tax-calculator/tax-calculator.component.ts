@@ -23,8 +23,8 @@ export class TaxCalculatorComponent implements OnInit {
   }
 
   calculate() {
-    this.total = this.taxCalculatorService.calculateTotal(this.value, this.vat);
-    this.taxValue = this.taxCalculatorService.calculateTax(this.value, this.vat);
+    this.total = this.taxCalculatorService.calculateTotal(Number(this.value), this.vat);
+    this.taxValue = this.taxCalculatorService.calculateTax(Number(this.value), this.vat);
   }
 
 }

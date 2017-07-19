@@ -7,5 +7,5 @@
 <div *ngIf="total">
     <br> The {{article}} cost {{value | currency:'USD':true:'1.0'}}
     <br> The Tax is {{taxValue | currency:'USD':true:'1.0'}}
-    <br> The Total is {{value + taxValue | currency:'USD':true:'1.0'}}
+    <br> The Total is {{total | currency:'USD':true:'1.0'}}
 </div>
